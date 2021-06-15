@@ -1,0 +1,22 @@
+{
+    "name": "sr-tiny",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "esbuild index.ts --bundle --format=esm --sourcemap --serve --servedir=.",
+        "build": "esbuild index.ts --bundle --minify --format=esm --outfile=dist/app.js && tsc --noEmit && node size.js",
+        "buildserve": "cp index.html dist/index.html && esbuild index.ts --bundle --minify --format=esm --serve --servedir=. --outfile=index.js",
+        "size": "node size.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "tiny-html-builder": "^1.4.0"
+    },
+    "devDependencies": {
+        "brotli-size": "^4.0.0",
+        "esbuild": "^0.12.5",
+        "typescript": "^4.2.4"
+    }
+}
