@@ -11,12 +11,12 @@
     },
     "author": "",
     "license": "ISC",
-    "dependencies": {
-        "tiny-html-builder": "^1.4.0"
-    },
     "devDependencies": {
         "brotli-size": "^4.0.0",
         "esbuild": "^0.12.5",
         "typescript": "^4.2.4"
+    },
+    "dependencies": {
+        "tiny-html-builder": "^2.0.0"
     }
 }
