@@ -1,4 +1,4 @@
-# Tiny SR (A tiny Swedish radio web app)
+# Tiny SR (A Swedish radio web app)
 
 This project is created to test and showcase tiny-html-builder.
 
